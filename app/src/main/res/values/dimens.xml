@@ -5,4 +5,6 @@
     <dimen name="layout_margin">16dp</dimen>
     <dimen name="padding">16dp</dimen>
     <dimen name="line_space">1.2</dimen>
+    <dimen name="resetHeight">10dp</dimen>
+    <dimen name="reset_height">15sp</dimen>
 </resources>

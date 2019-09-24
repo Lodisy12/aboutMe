@@ -35,10 +35,29 @@ class MainActivity : AppCompatActivity() {
 
         binding.doneButton.setOnClickListener {
             addNickname(it)
+
+        binding.resetButton.setOnClickListener {
+            resetNickname(it)
         }
 
 //        editText = findViewById(R.id.nickname_edit)
 //        nicknameTextView = findViewById(R.id.nickname_text)
+    }
+
+
+
+    }
+
+    private fun resetNickname(view: View) {
+        binding.apply {
+            myName?.nickname = ""
+            invalidateAll()
+            nicknameEdit.text.clear()
+            nicknameEdit.visibility = View.VISIBLE
+            doneButton.visibility = View.VISIBLE
+            nicknameText.visibility = View.GONE
+            reset_button.visibility = View.GONE
+        }
     }
 
     private fun addNickname(view: View) {
@@ -50,6 +69,7 @@ class MainActivity : AppCompatActivity() {
                 nicknameEdit.visibility = View.GONE
                 doneButton.visibility = View.GONE
                 nicknameText.visibility = View.VISIBLE
+                reset_button.visibility = View.VISIBLE
             }
         }
         //nicknameTextView.text = editText.text
