@@ -24,7 +24,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='name_of_file.gif' title='About Me animated demo' alt='About Me demo' />
+<img src='aboutMe.gif' title='About Me animated demo' alt='About Me demo' />
 
 ## Notes
 
