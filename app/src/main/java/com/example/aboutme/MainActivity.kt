@@ -10,10 +10,14 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import com.example.aboutme.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+
+    private val myName: MyName = MyName( "Joey")
+
 
     //lateinit var editText: EditText
     //lateinit var nicknameTextView: TextView
@@ -22,6 +26,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        binding.myName = myName
 
         //findViewById<Button>(R.id.done_button).setOnClickListener {
         //    addNickname(it)
@@ -36,13 +42,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun addNickname(view: View) {
-
-        binding.apply {
-            nicknameText.text = nicknameEdit.text
-            invalidateAll()
-            nicknameEdit.visibility = View.GONE
-            doneButton.visibility = View.GONE
-            nicknameText.visibility = View.VISIBLE
+        if (nickname_edit.text.toString() != "") {
+                binding.apply {
+                //nicknameText.text = nicknameEdit.text
+                myName?.nickname = nicknameEdit.text.toString()
+                invalidateAll()
+                nicknameEdit.visibility = View.GONE
+                doneButton.visibility = View.GONE
+                nicknameText.visibility = View.VISIBLE
+            }
         }
         //nicknameTextView.text = editText.text
         //editText.visibility = View.GONE
