@@ -1,23 +1,24 @@
-# <name of app>
+# aboutMe
 
-An Android application that displays a short bio about a person.
+An Android application that displays a short bio about me.
 
-Submitted by: <name>
+Submitted by: Joseph Lawter
 
-Time spent: <time>
+Time spent: 2 1/2 hours
 
 ## User Stories
 
 The following **required** functionality is complete:
 
-* [ ] Implement LinearLayout view group with nested ScrollView.
-* [ ] Create and use resources for dimensions, styles, colors, and font.
-* [ ] Use data binding to improve efficiency.
-* [ ] App displays a scrollable bio and displays a nickname when button is clicked.
+* [X] Implement LinearLayout view group with nested ScrollView.
+* [X] Create and use resources for dimensions, styles, colors, and font.
+* [X] Use data binding to improve efficiency.
+* [X] App displays a scrollable bio and displays a nickname when button is clicked.
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [X] Only allow DONE button to be pressed when a string is entered into the bar
+* [X] Reset button allows user to change their nickname once its set
 
 ## Video Walkthrough 
 
@@ -27,11 +28,12 @@ Here's a walkthrough of implemented user stories:
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+This app wasn't too difficult to create. The Kotlin is still somewhat confusing to me,
+but the XML portion of Android Studio is becoming more and more clear
 
 ## License
 
-Copyright 2019 <name>
+Copyright 2019 Joseph Lawter
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
